@@ -3,8 +3,8 @@
 This is the code of the paper '**Unsupervised learning based end-to-end delayless generative fixed-filter active noise control**' accepted by 2024 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2024). You can find the paper at [Arxiv](https://arxiv.org/pdf/2402.09460.pdf) or [Ieee xplore](https://ieeexplore.ieee.org/document/10448277).
 
 <p align="center">
-  <img src="https://github.com/Luo-Zhengding/Unsupervised-GFANC/assets/95018034/3a4c1258-2ac4-4078-89df-9a72b43a160e" alt="" width="500" height="400">
-  <img src="https://github.com/Luo-Zhengding/Unsupervised-GFANC/assets/95018034/05f65a18-b5dd-4286-a9d0-5d1309aa62c8" alt="" width="500" height="400">
+  <img src="https://github.com/Luo-Zhengding/Unsupervised-GFANC/assets/95018034/3a4c1258-2ac4-4078-89df-9a72b43a160e" alt="" width="400" height="300">
+  <img src="https://github.com/Luo-Zhengding/Unsupervised-GFANC/assets/95018034/05f65a18-b5dd-4286-a9d0-5d1309aa62c8" alt="" width="400" height="300">
 </p>
 <p align="center">
 </p>
