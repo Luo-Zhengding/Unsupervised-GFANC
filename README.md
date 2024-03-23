@@ -17,7 +17,7 @@ This repository contains the code for the paper "**Unsupervised Learning Based E
 
 1. **Pre-trained Model**: If you don't want to retrain the 1D CNN (`M5_Network.py`), you can use the trained model available in `models/1DCNN_SyntheticDataset_UnsupervisedLearning.pth`. Simply run the `Noise_Cancellation_RealNoise_RealPath.ipynb` notebook to get the noise reduction results.
 2. **Training Dataset**: The 1D CNN is trained using a synthetic noise dataset with label files `Soft_Index.csv`. The entire dataset is available [here](https://drive.google.com/file/d/1hs7_eHITxL16HeugjQoqYFTs-Cm7J-Tq/view?usp=sharing).
-3. **Applying to New Acoustic Paths**: To use the Unsupervised-GFANC method on new acoustic paths, obtain the corresponding pre-trained broadband control filter and decompose it into sub control filters. The trained 1D CNN in the GFANC-Bayes system can remain unchanged. For more details, please refer to the paper.
+3. **Applying to New Acoustic Paths**: We have provided the sub control filters on synthetic acoustic paths and our measured acoustic paths. If you want to use the Unsupervised-GFANC method on new acoustic paths, just obtain the corresponding pre-trained broadband control filter and decompose it into sub control filters. The trained 1D CNN in Unsupervised-GFANC can remain unchanged. For more details, please refer to the paper.
 
 ## Related Works
 
@@ -27,4 +27,4 @@ This repository contains the code for the paper "**Unsupervised Learning Based E
 - [A hybrid sfanc-fxnlms algorithm for active noise control based on deep learning](https://arxiv.org/pdf/2208.08082)
 - [Performance Evaluation of Selective Fixed-filter Active Noise Control based on Different Convolutional Neural Networks](https://arxiv.org/pdf/2208.08440)
 
-<p style="color: blue;">If you find our work interesting, please consider citing our papers. Thanks for your interest, and have a great day!</p>
+**If you find our work interesting, please consider citing our papers. Thanks for your interest, and have a great day!**
