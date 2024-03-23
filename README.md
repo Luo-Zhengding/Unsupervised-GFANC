@@ -18,7 +18,7 @@ This is the code of the paper '**Unsupervised learning based end-to-end delayles
 
 **2.How to use the code:**
 
-If you don't want to retrain the 1D CNN ('M5_Network.py'), the trained model can be found in 'models/[1DCNN_SyntheticDataset_UnsupervisedLearning.pth](https://github.com/Luo-Zhengding/Unsupervised-GFANC/blob/main/models/1DCNN_SyntheticDataset_UnsupervisedLearning.pth)', you can easily run the 'Main-GFANC-Bayes.ipynb' file to get the noise reduction results.
+If you don't want to retrain the 1D CNN ('M5_Network.py'), the trained model can be found in 'models/[1DCNN_SyntheticDataset_UnsupervisedLearning.pth](https://github.com/Luo-Zhengding/Unsupervised-GFANC/blob/main/models/1DCNN_SyntheticDataset_UnsupervisedLearning.pth)', you can easily run the '[Noise_Cancellation_RealNoise_RealPath.ipynb](https://github.com/Luo-Zhengding/Unsupervised-GFANC/blob/main/Noise_Cancellation_RealNoise_RealPath.ipynb)' file to get the noise reduction results.
 
 The 1D CNN is trained using a synthetic noise dataset, its label files are 'Soft_Index.csv' and 'Hard_Index.csv'. The entire dataset is available at https://drive.google.com/file/d/1hs7_eHITxL16HeugjQoqYFTs-Cm7J-Tq/view?usp=sharing
 
