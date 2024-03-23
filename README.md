@@ -27,4 +27,4 @@ This repository contains the code for the paper "**Unsupervised Learning Based E
 - [A hybrid sfanc-fxnlms algorithm for active noise control based on deep learning](https://arxiv.org/pdf/2208.08082)
 - [Performance Evaluation of Selective Fixed-filter Active Noise Control based on Different Convolutional Neural Networks](https://arxiv.org/pdf/2208.08440)
 
-**If you find our work interesting, please consider citing our papers. Thanks for your interest, and have a great day!**
+**If you are interested in our works, please consider citing our papers. Thanks for your interest, and have a great day!**
