@@ -9,14 +9,14 @@ This is the code of the paper '**Unsupervised learning based end-to-end delayles
 <p align="center">
 </p>
 
-**HIGHLIGHTS:**
-1. To address this limitation of the SFANC method and generate more appropriate control filters, a generative fixed-filter active noise control approach based on Bayesian filter (GFANC-Bayes) is proposed in this paper.
-   
-2. The GFANC-Bayes method can automatically generate suitable control filters by combining sub control filters. The combination weights of sub control filters are predicted via a 1D CNN. The predicted combination weights are then filtered by a Bayesian filtering module, which exploits the correlation information between adjacent noise frames to improve the prediction accuracy and robustness.
+**1.Highlights:**
+(1) The 1D CNN in the previous supervised-GFANC method requires initial training using labelled noise data. Labelling noise data can be resource-intensive and may introduce some biases. In this paper, we propose an unsupervised-GFANC approach to simplify the 1D CNN training process and enhance its practicality.
 
-3. To achieve delayless noise control, the co-processor operates at the frame rate while the real-time controller performs at the sample rate in parallel.
+(2) During training, the co-processor and real-time controller are integrated into an end-to-end differentiable ANC system. This enables us to use the accumulated squared error signal as the loss for training the 1D CNN.
 
-**How to use the code:**
+(3) The unsupervised-GFANC method not only omits the labelling process but also exhibits better noise reduction performance than the supervised-GFANC method due to avioding labelling errors.
+
+**2.How to use the code:**
 
 If you don't want to retrain the 1D CNN ('M5_Network.py'), the trained model can be found in 'models/M6_res_Synthetic.pth', you can easily run the 'Main-GFANC-Bayes.ipynb' file to get the noise reduction results.
 
@@ -24,7 +24,7 @@ The 1D CNN is trained using a synthetic noise dataset, its label files are 'Soft
 
 Especially, the pre-trained sub control filters are obtained on synthetic acoustic paths, where the primary and secondary paths are bandpass filters. If you want to use the GFANC-Bayes system on new acoustic paths only requires obtaining the corresponding broadband control filter and decomposing it into sub control filters. Noticeably, the trained 1D CNN in the GFANC-Bayes system remains unchanged. The detailed information can be found in Section 'Noise Cancellation on Measured Acoustic Paths' in the paper.
 
-**RELATED PAPERS:**
+**Related works:**
 - [Deep Generative Fixed-Filter Active Noise Control](https://arxiv.org/pdf/2303.05788)
 - [Delayless Generative Fixed-filter Active Noise Control based on Deep Learning and Bayesian Filter](https://ieeexplore.ieee.org/document/10339836/)
 - [GFANC-Kalman: Generative Fixed-Filter Active Noise Control with CNN-Kalman Filtering](https://ieeexplore.ieee.org/document/10323505)
