@@ -18,11 +18,11 @@ This is the code of the paper '**Unsupervised learning based end-to-end delayles
 
 **2.How to use the code:**
 
-If you don't want to retrain the 1D CNN ('M5_Network.py'), the trained model can be found in 'models/[1DCNN_SyntheticDataset_UnsupervisedLearning.pth](https://github.com/Luo-Zhengding/Unsupervised-GFANC/blob/main/models/1DCNN_SyntheticDataset_UnsupervisedLearning.pth)', you can easily run the '[Noise_Cancellation_RealNoise_RealPath.ipynb](https://github.com/Luo-Zhengding/Unsupervised-GFANC/blob/main/Noise_Cancellation_RealNoise_RealPath.ipynb)' file to get the noise reduction results.
+(1) If you don't want to retrain the 1D CNN ('M5_Network.py'), the trained model can be found in 'models/[1DCNN_SyntheticDataset_UnsupervisedLearning.pth](https://github.com/Luo-Zhengding/Unsupervised-GFANC/blob/main/models/1DCNN_SyntheticDataset_UnsupervisedLearning.pth)', you can easily run the '[Noise_Cancellation_RealNoise_RealPath.ipynb](https://github.com/Luo-Zhengding/Unsupervised-GFANC/blob/main/Noise_Cancellation_RealNoise_RealPath.ipynb)' file to get the noise reduction results.
 
-The 1D CNN is trained using a synthetic noise dataset, its label files are 'Soft_Index.csv' and 'Hard_Index.csv'. The entire dataset is available at https://drive.google.com/file/d/1hs7_eHITxL16HeugjQoqYFTs-Cm7J-Tq/view?usp=sharing
+(2) The 1D CNN is trained using a synthetic noise dataset, its label files are 'Soft_Index.csv'. The entire dataset is available at https://drive.google.com/file/d/1hs7_eHITxL16HeugjQoqYFTs-Cm7J-Tq/view?usp=sharing
 
-Especially, the pre-trained sub control filters are obtained on synthetic acoustic paths, where the primary and secondary paths are bandpass filters. If you want to use the GFANC-Bayes system on new acoustic paths only requires obtaining the corresponding broadband control filter and decomposing it into sub control filters. Noticeably, the trained 1D CNN in the GFANC-Bayes system remains unchanged. The detailed information can be found in Section 'Noise Cancellation on Measured Acoustic Paths' in the paper.
+(3) We have provided the sub control filters on synthetic acoustic paths and real acoustic paths. If you want to use the Unsupervised-GFANC method on other new acoustic paths, just get the corresponding pre-trained broadband control filter and decompose it into sub control filters. Noticeably, the trained 1D CNN in the GFANC-Bayes system can remain unchanged. Detailed information can be found in the paper.
 
 **Related works:**
 - [Deep Generative Fixed-Filter Active Noise Control](https://arxiv.org/pdf/2303.05788)
@@ -30,4 +30,6 @@ Especially, the pre-trained sub control filters are obtained on synthetic acoust
 - [GFANC-Kalman: Generative Fixed-Filter Active Noise Control with CNN-Kalman Filtering](https://ieeexplore.ieee.org/document/10323505)
 - [A hybrid sfanc-fxnlms algorithm for active noise control based on deep learning](https://arxiv.org/pdf/2208.08082)
 - [Performance Evaluation of Selective Fixed-filter Active Noise Control based on Different Convolutional Neural Networks](https://arxiv.org/pdf/2208.08440)
-- If you are interested in this work, you can read and cite our papers. Thanks!
+- **If you are interested in this work, you can read and cite our papers.**
+
+Thanks for your reading! Have a nice day!
